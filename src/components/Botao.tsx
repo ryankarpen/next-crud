@@ -18,7 +18,8 @@ export default function Botao(props: BotaoProps){
     return(
         <button onClick={props.onClick} className={`
             bg-gradient-to-r ${cores[cor]}
-            text-white px-4 py-2 rounded-md 
+            text-white px-2 py-2 sm:px-4 sm:py-2 rounded-md 
+            text-sm sm:text-lg cursor-pointer
             ${props.className}
         `}>
             {props.children}
